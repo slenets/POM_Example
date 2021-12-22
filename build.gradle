@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group 'org.firstStartUp'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.1.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    testCompileOnly 'org.projectlombok:lombok:1.18.16'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation 'com.jayway.restassured:rest-assured:2.9.0'
+    implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:3.0.2'
+}
+
+test {
+    useTestNG()
+}
+
+task navigate(type: Test){
+    useTestNG(){
+        if(project.hasProperty('browser')){
+            systemProperty 'browser', "${browser}"
+        }
+    }
+}

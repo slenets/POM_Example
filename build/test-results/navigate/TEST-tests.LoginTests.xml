@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-20T19:09:03" hostname="DESKTOP-LINCIVQ" time="2.786">
+  <properties/>
+  <testcase name="loginValidData" classname="tests.LoginTests" time="2.786"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

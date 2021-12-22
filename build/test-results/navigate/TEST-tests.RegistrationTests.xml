@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-20T19:09:06" hostname="DESKTOP-LINCIVQ" time="2.425">
+  <properties/>
+  <testcase name="registrationValidData" classname="tests.RegistrationTests" time="2.425"/>
+  <system-out><![CDATA[516
+1369    570
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
